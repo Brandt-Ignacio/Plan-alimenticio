@@ -179,10 +179,10 @@ test("Le mando un plan alimenticio con 3 comidas del tipo proteinas y me tiene q
     planAlimentacion.agregarComida(comida2);
     planAlimentacion.agregarComida(comida3);
 
-    expect(planAlimentacion.esFuerteEn("proteinas")).toBe(true);
+    expect(planAlimentacion.esFuerteEn("proteinas",50)).toBe(true);
 });
 
-test("Le mando un plan alimenticio con 2 comidas y me tiene que decir que es debil en proteinas (devuelve true)", ()=>{
+test("Le mando un plan alimenticio con 2 comidas y me tiene que decir que es debil en proteinas (devuelve false)", ()=>{
     const planAlimentacion = new PlanAlimenticio();
 
     const ingrediente1 = new Ingrediente(null,"proteinas");
@@ -199,5 +199,28 @@ test("Le mando un plan alimenticio con 2 comidas y me tiene que decir que es deb
     planAlimentacion.agregarComida(comida1);
     planAlimentacion.agregarComida(comida2);
 
-    expect(planAlimentacion.esFuerteEn("proteinas")).toBe(false);
+    expect(planAlimentacion.esFuerteEn("proteinas",50)).toBe(false);
+});
+
+test("Le mando un plan alimenticio con 2 comidas y me tiene que decir que es bien verde (true)", ()=>{
+    const planAlimentacion = new PlanAlimenticio();
+
+    const ingrediente1 = new Ingrediente(null,"vegetal");
+    const ingrediente2 = new Ingrediente(null,"proteinas");
+
+    const comida1 = new Comida(null,null);
+    const comida2 = new Comida(null,null);
+
+    comida1.agregarIngrediente(ingrediente1);
+    comida1.agregarIngrediente(ingrediente2);
+
+    comida2.agregarIngrediente(ingrediente1);
+
+
+    planAlimentacion.agregarComida(comida1);
+    planAlimentacion.agregarComida(comida2);
+
+
+
+    expect(planAlimentacion.esFuerteEn("vegetales",35)).toBe(true);
 });

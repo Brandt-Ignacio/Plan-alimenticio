@@ -43,11 +43,8 @@ export class PlanAlimenticio{
         return this.comidas.filter((c) => c.tipo == tipo).length;
     }
 
-    esFuerteEn(componente){
-        return this.comidas.every((c) => c.porcentajeDe(componente) >= 50);
+    esFuerteEn(componente,valoracion){
+        return this.comidas.every((c) => c.porcentajeDe(componente) >= valoracion);
     }
 
-    esBienVerde(){
-        
-    }
 }
