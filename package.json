@@ -1,0 +1,23 @@
+{
+  "name": "plan-alimenticio",
+  "version": "1.0.0",
+  "description": "ejercicio anachu",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brandt-Ignacio/Plan-alimenticio.git"
+  },
+  "author": "Ignacio Brandt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brandt-Ignacio/Plan-alimenticio/issues"
+  },
+  "homepage": "https://github.com/Brandt-Ignacio/Plan-alimenticio#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
