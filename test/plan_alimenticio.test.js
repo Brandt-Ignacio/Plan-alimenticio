@@ -222,5 +222,28 @@ test("Le mando un plan alimenticio con 2 comidas y me tiene que decir que es bie
 
 
 
-    expect(planAlimentacion.esFuerteEn("vegetales",35)).toBe(true);
+    expect(planAlimentacion.esFuerteEn("vegetal",35)).toBe(true);
+});
+
+test("Le mando un plan alimenticio con 2 comidas y me tiene que decir que NO es bien verde (false)", ()=>{
+    const planAlimentacion = new PlanAlimenticio();
+
+    const ingrediente1 = new Ingrediente(null,"vegetal");
+    const ingrediente2 = new Ingrediente(null,"proteinas");
+
+    const comida1 = new Comida(null,null);
+    const comida2 = new Comida(null,null);
+
+    comida1.agregarIngrediente(ingrediente2);
+    comida1.agregarIngrediente(ingrediente2);
+
+    comida2.agregarIngrediente(ingrediente1);
+
+
+    planAlimentacion.agregarComida(comida1);
+    planAlimentacion.agregarComida(comida2);
+
+
+
+    expect(planAlimentacion.esFuerteEn("vegetal",35)).toBe(false);
 });
