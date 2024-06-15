@@ -1,5 +1,5 @@
 <h1>Rico, Sano y Natural</h1>
-<h3>Objetivos</h3>
+<h2>Objetivos</h2>
 <p>Se desea desarrollar un sistema que asista a los atletas de alto rendimiento con su preparación nutricional.</p> 
 
 <h3>Profesionales y Pacientes</h3>
@@ -9,27 +9,27 @@
 <p>Cada vez que un Atleta comienza un Plan Alimenticio, el profesional asignado al plan registra los datos básicos del paciente (Edad, Peso Actual y Medida de cintura), y establece la duración del mismo. El plan puede ser realizado de forma semanal, quincenal o mensual.</p>
 
 <h3>Objetivos del plan alimenticio</h3>
-<p>Establecida la duración del Plan, se establecen una serie de objetivos a lograr.
-El profesional deberá poder ejecutar la funcionalidad de“generar evaluación, que involucra revisar cada uno de los objetivos y generar una calificación. La calificación podrá ser:
-_**Excelente**_: en caso de que todos los objetivos hayan sido cumplidos.
-_**Muy buena**_: en caso de que se hayan cumplido más del 60%.
-_**Buena**_: en caso de que se hayan cumplido entre el 50% y 60% de los objetivos.
-_**Regular**_: para el resto de los casos.</p>
+<p>Establecida la duración del Plan, se establecen una serie de objetivos a lograr.</br>
+El profesional deberá poder ejecutar la funcionalidad de“generar evaluación, que involucra revisar cada uno de los objetivos y generar una calificación. La calificación podrá ser:</br>
+<b>Excelente</b>: en caso de que todos los objetivos hayan sido cumplidos.</br>
+<b>Muy buena</b>: en caso de que se hayan cumplido más del 60%.</br>
+<b>Buena</b>: en caso de que se hayan cumplido entre el 50% y 60% de los objetivos.</br>
+<b>Regular</b>: para el resto de los casos.</p>
 
 <h3>Comidas del plan alimenticio</h3>
-<p>La cantidad total de comidas variará de acuerdo a la duración del plan:
-Si el plan es semanal serán 28 comidas
-Si es quincenal serán 60
-Si es mensual 120
-Las comidas se pueden clasificar en dos tipos: Desayunos y Meriendas (DM), y Almuerzos y Cenas (AC).
-Para los DM, solo será necesario registrar una descripción de la comida (Ej: Tostadas con queso untable), sin embargo, para los AC será necesario además registrar la composición de las mismas. Un plato de AC está compuesto de la siguiente manera:
-1 Proteína: Pollo, Carnes Rojas o Pescado
-1 Carbohidrato: Fideos, Arroz, Quinoa, etc. ...
-1 Porción de Vegetales: Vegetales verdes crudos o cocidos
+<p>La cantidad total de comidas variará de acuerdo a la duración del plan:</br>
+Si el plan es semanal serán 28 comidas</br>
+Si es quincenal serán 60</br>
+Si es mensual 120</br>
+Las comidas se pueden clasificar en dos tipos: Desayunos y Meriendas (DM), y Almuerzos y Cenas (AC).</br>
+Para los DM, solo será necesario registrar una descripción de la comida (Ej: Tostadas con queso untable), sin embargo, para los AC será necesario además registrar la composición de las mismas. Un plato de AC está compuesto de la siguiente manera:</br>
+1 Proteína: Pollo, Carnes Rojas o Pescado</br>
+1 Carbohidrato: Fideos, Arroz, Quinoa, etc.</br>
+1 Porción de Vegetales: Vegetales verdes crudos o cocidos</br>
 Dependiendo de las necesidades del atleta, la relación entre estos componentes puede variar. Por ejemplo, para aquellos atletas que requieran reducir su porcentaje de grasa corporal, la composición de su AC será de la siguiente manera: 30% Proteínas, 0% Carbohidratos y 70% Vegetales. Mientras que para aquellos que tengan como objetivo el desarrollo de masa muscular, la composición será similar la siguiente: 30% Proteínas, 20% Carbohidratos, 50% Vegetales.</p>
 
 <h3>Colaciones del plan alimenticio</h3>
-<p>El plan contempla, además, la ingesta de colaciones: Comidas ligeras que se ingieren entre comidas. Cada plan tendrá asociada una lista de colaciones permitidas, asignadas por el profesional al momento de confeccionar el plan. Análogamente se realizará el mismo proceso para las bebidas.
+<p>El plan contempla, además, la ingesta de colaciones: Comidas ligeras que se ingieren entre comidas. Cada plan tendrá asociada una lista de colaciones permitidas, asignadas por el profesional al momento de confeccionar el plan. Análogamente se realizará el mismo proceso para las bebidas.</br>
 Una vez al mes, el Administrador de la plataforma realizará la carga o actualización de las colaciones y bebidas, lo que significa que el profesional no puede dar de alta nuevas colaciones y/o bebidas, sino que las selecciona de un listado pre-cargado.</p>
 
 <h2>Requerimientos</h2>
