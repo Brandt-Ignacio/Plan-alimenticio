@@ -2,6 +2,7 @@ import { PlanAlimenticio } from "../entities/plan_alimenticio";
 import { Objetivo } from "../entities/objetivo";
 import { Comida } from "../entities/comida";
 import { Ingrediente } from "../entities/ingrediente";
+import {Colacion} from "../entities/colacion";
 
 test("Ingreso 10 objetivos y tiene que devolverme la calificacion Excelente", () =>{
     const planAlimentacion = new PlanAlimenticio();
@@ -246,4 +247,18 @@ test("Le mando un plan alimenticio con 2 comidas y me tiene que decir que NO es 
 
 
     expect(planAlimentacion.esFuerteEn("vegetal",35)).toBe(false);
+});
+
+test("Le paso un plan alimenticio con 3 colaciones y me tiene que devolver 3", () =>{
+    const planAlimentacion = new PlanAlimenticio();
+
+    const colacion1 = new Colacion("Manzana");
+    const colacion2 = new Colacion("Cafe");
+    const colacion3 = new Colacion("Gelatina");
+
+    planAlimentacion.agregarColacion(colacion1);
+    planAlimentacion.agregarColacion(colacion2);
+    planAlimentacion.agregarColacion(colacion3);
+
+    expect(planAlimentacion.cantDeColaciones()).toBe(3);
 });

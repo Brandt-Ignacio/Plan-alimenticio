@@ -47,4 +47,8 @@ export class PlanAlimenticio{
         return this.comidas.every((c) => c.porcentajeDe(componente) >= porcentaje);
     }
 
+    cantDeColaciones(){
+        return this.colaciones.length;
+    }
+
 }
