@@ -1,14 +1,14 @@
-#Rico, Sano y Natural
-###Objetivos
+<h1>Rico, Sano y Natural</h1>
+<h3>Objetivos</h3>
 <p>Se desea desarrollar un sistema que asista a los atletas de alto rendimiento con su preparación nutricional.</p> 
 
-###Profesionales y Pacientes
+<h3>Profesionales y Pacientes</h3>
 <p>El sistema será utilizado por los Profesionales (Nombre*, Apellido*, Especialidad*, Matrícula), encargados de diseñar el Plan Alimenticio, y por los Pacientes (Nombre*, Apellido*, Edad*, Sexo*, Disciplina*), encargados de seguir el plan.</p>
 
-###Planes alimenticios
+<h3>Planes alimenticios</h3>
 <p>Cada vez que un Atleta comienza un Plan Alimenticio, el profesional asignado al plan registra los datos básicos del paciente (Edad, Peso Actual y Medida de cintura), y establece la duración del mismo. El plan puede ser realizado de forma semanal, quincenal o mensual.</p>
 
-###Objetivos del plan alimenticio
+<h3>Objetivos del plan alimenticio</h3>
 <p>Establecida la duración del Plan, se establecen una serie de objetivos a lograr.
 El profesional deberá poder ejecutar la funcionalidad de“generar evaluación, que involucra revisar cada uno de los objetivos y generar una calificación. La calificación podrá ser:
 _**Excelente**_: en caso de que todos los objetivos hayan sido cumplidos.
@@ -16,7 +16,7 @@ _**Muy buena**_: en caso de que se hayan cumplido más del 60%.
 _**Buena**_: en caso de que se hayan cumplido entre el 50% y 60% de los objetivos.
 _**Regular**_: para el resto de los casos.</p>
 
-###Comidas del plan alimenticio
+<h3>Comidas del plan alimenticio</h3>
 <p>La cantidad total de comidas variará de acuerdo a la duración del plan:
 Si el plan es semanal serán 28 comidas
 Si es quincenal serán 60
@@ -28,11 +28,11 @@ Para los DM, solo será necesario registrar una descripción de la comida (Ej: T
 1 Porción de Vegetales: Vegetales verdes crudos o cocidos
 Dependiendo de las necesidades del atleta, la relación entre estos componentes puede variar. Por ejemplo, para aquellos atletas que requieran reducir su porcentaje de grasa corporal, la composición de su AC será de la siguiente manera: 30% Proteínas, 0% Carbohidratos y 70% Vegetales. Mientras que para aquellos que tengan como objetivo el desarrollo de masa muscular, la composición será similar la siguiente: 30% Proteínas, 20% Carbohidratos, 50% Vegetales.</p>
 
-###Colaciones del plan alimenticio
+<h3>Colaciones del plan alimenticio</h3>
 <p>El plan contempla, además, la ingesta de colaciones: Comidas ligeras que se ingieren entre comidas. Cada plan tendrá asociada una lista de colaciones permitidas, asignadas por el profesional al momento de confeccionar el plan. Análogamente se realizará el mismo proceso para las bebidas.
 Una vez al mes, el Administrador de la plataforma realizará la carga o actualización de las colaciones y bebidas, lo que significa que el profesional no puede dar de alta nuevas colaciones y/o bebidas, sino que las selecciona de un listado pre-cargado.</p>
 
-##Requerimientos
+<h2>Requerimientos</h2>
 <p>El Sistema debe:</p>
 
 - Permitir obtener la calificación final de un plan alimenticio, en base al cumplimiento de sus objetivos.
