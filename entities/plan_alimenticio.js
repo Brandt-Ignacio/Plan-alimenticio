@@ -51,4 +51,8 @@ export class PlanAlimenticio{
         return this.colaciones.length;
     }
 
+    cantDeBebidas(){
+        return this.bebidas.length;
+    }
+
 }

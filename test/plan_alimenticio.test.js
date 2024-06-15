@@ -3,6 +3,7 @@ import { Objetivo } from "../entities/objetivo";
 import { Comida } from "../entities/comida";
 import { Ingrediente } from "../entities/ingrediente";
 import {Colacion} from "../entities/colacion";
+import {Bebida} from "../entities/bebida";
 
 test("Ingreso 10 objetivos y tiene que devolverme la calificacion Excelente", () =>{
     const planAlimentacion = new PlanAlimenticio();
@@ -261,4 +262,18 @@ test("Le paso un plan alimenticio con 3 colaciones y me tiene que devolver 3", (
     planAlimentacion.agregarColacion(colacion3);
 
     expect(planAlimentacion.cantDeColaciones()).toBe(3);
+});
+
+test("Le paso un plan alimenticio con 3 bebidas y me tiene que devolver 3", () =>{
+    const planAlimentacion = new PlanAlimenticio();
+
+    const bebida1 = new Bebida("Agua");
+    const bebida2 = new Bebida("Jugo");
+    const bebida3 = new Bebida("Agua saborizada");
+
+    planAlimentacion.agregarBebida(bebida1);
+    planAlimentacion.agregarBebida(bebida2);
+    planAlimentacion.agregarBebida(bebida3);
+
+    expect(planAlimentacion.cantDeBebidas()).toBe(3);
 });
