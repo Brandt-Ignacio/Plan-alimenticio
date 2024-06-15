@@ -1,5 +1,5 @@
-#Rico, Sano y Natural
-###Objetivos
+#Rico, Sano y Natural#
+###Objetivos###
 Se desea desarrollar un sistema que asista a los atletas de alto rendimiento con su preparación nutricional. 
 
 ###Profesionales y Pacientes
